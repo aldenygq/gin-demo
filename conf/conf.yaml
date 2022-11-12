@@ -1,9 +1,9 @@
 mysql:
-  host: 10.188.36.16
+  host: 127.0.0.1
   user: op_test
-  dbname: sf-paas 
-  pwd: op_test@123
-  port: 3320
+  dbname: test
+  pwd: test
+  port: 3306
   maxIdleConns: 20
   maxOpenConns: 50
   maxConnLifeTime: 550
@@ -13,7 +13,7 @@ mysql:
 log:
   loglevel: info
   logmaxage: 7
-  logfile: ./sf-paas.log
+  logfile: ./gin-demo.log
 
 server:
   ishttps: false
@@ -26,5 +26,5 @@ server:
     pem: temp/pem.pem
 
 redis:
-  ip: opdev.sftcwl.com
+  ip: 127.0.0.1
   port: 6379
