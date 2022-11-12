@@ -1,0 +1,30 @@
+mysql:
+  host: 10.188.36.16
+  user: op_test
+  dbname: sf-paas 
+  pwd: op_test@123
+  port: 3320
+  maxIdleConns: 20
+  maxOpenConns: 50
+  maxConnLifeTime: 550
+  type: mysql
+  dbcharset: utf8
+
+log:
+  loglevel: info
+  logmaxage: 7
+  logfile: ./sf-paas.log
+
+server:
+  ishttps: false
+  host: 0.0.0.0
+  port: 8041
+  #release(生产)/test(测试)
+  mode: release
+  ssl:
+    key: keystring
+    pem: temp/pem.pem
+
+redis:
+  ip: opdev.sftcwl.com
+  port: 6379
